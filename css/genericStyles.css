@@ -1,0 +1,28 @@
+#conteudo{
+   border: gray 2px solid;
+   padding: 80px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.textoCaption {
+    font-size: 14px;
+}
+.purple{
+   background-color: #AA66CC;
+}
+.purple2{
+   background-color: #551a8b;
+}
+
+.pink{
+   background-color: #FF3547;
+}
+.black{
+   background-color: black;
+}
+
+.textoNav{
+  font-size: 18px;
+}
