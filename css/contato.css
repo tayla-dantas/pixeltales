@@ -11,17 +11,19 @@
 }
 .formulario{
     float: right;
+    padding-right: 10%;
 }
-.container{
+.fieldC{
     border: 1px solid;
-    padding: 50px;
-    margin-left: -10%;
+    padding: 20px;
+    margin-left: 0%;
+    margin-top: 0%;
 }
 .legend{
-    font-size: 50px;
+    font-size: 40px;
 }
 .formLabel{
-    margin-top: -10%;
+    margin-top: -2%;
     
 }
 .formInput{
