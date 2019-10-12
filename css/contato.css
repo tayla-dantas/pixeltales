@@ -1,0 +1,34 @@
+.textCima{
+    text-align: center;
+    font-size: 1em;
+}
+.imageEsquerda{
+    float: left;
+    height: 40%;
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.formulario{
+    float: right;
+}
+.container{
+    border: 1px solid;
+    padding: 50px;
+    margin-left: -10%;
+}
+.legend{
+    font-size: 50px;
+}
+.formLabel{
+    margin-top: -10%;
+    
+}
+.formInput{
+    margin-bottom: 0%;
+}
+.textBottom{
+    float: left;
+    margin-left: 3%;
+}
+
