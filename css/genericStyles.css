@@ -7,7 +7,10 @@ body{
    padding-right: 60px;
 
 }
-.textBlojck{
+.centerIt{
+   align-content: center;
+}
+.textBlock{
    margin-left: 70px;
    margin-right: 70px;
 }
@@ -56,3 +59,34 @@ h1{
 .textoNav{
   font-size: 18px;
 }
+ 
+ .fa {
+   padding: 20px;
+   font-size: 30px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 100%;
+ }
+ .fa:hover {
+   opacity: 0.7;
+}
+
+.fa-facebook {
+  
+ color: white;
+}
+
+.fa-twitter {
+  
+ color: white;
+}
+.fa-youtube {
+   
+   color: white;
+ }
+ 
+ .fa-instagram {
+   
+   color: white;
+ }
