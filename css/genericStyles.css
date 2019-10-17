@@ -7,6 +7,9 @@ body{
    padding-right: 60px;
 
 }
+.paddingIt{
+   padding: 90px;
+}
 .centerIt{
    align-content: center;
 }
@@ -14,10 +17,17 @@ body{
    margin-left: 70px;
    margin-right: 70px;
 }
-
+.textBlock2{
+   margin:40px;
+   text-align: center;
+}
 .marginBottom{
    margin-top: 50px;
    
+}
+.margin{
+   margin-left: 300px;
+   margin-right: 300px;
 }
 
 h2{

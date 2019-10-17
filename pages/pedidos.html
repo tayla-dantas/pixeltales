@@ -1,14 +1,19 @@
 <head>
     <meta charset="utf-8">
+    <!-- Links externos -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Links internos -->
     <link rel="stylesheet" href="..\css\genericStyles.css">
+    <link rel="stylesheet" href="../css/contato.css">
     <link rel="script" href="..\js\carousel.js">
     <title>Pedidos</title>
 </head>
@@ -76,6 +81,72 @@
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
+    </div>
+    <div id="conteudo" >
+            <h2 class="textBlock2 textoCaption">Possui uma marca e quer um advergame? Tem aquela ideia legal para um jogo? 
+                    Preencha o formulario abaixo para encomendar um projeto!
+            </h2>
+            
+            <form class="margin centerIt">
+                <fieldset class="fieldC paddingIt">
+                    <legend>Entre em contato</legend>
+                 
+                    <div class="form-group">
+                        <label for="nome" >Nome</label>
+                        <input type="text" placeholder="Insira seu nome" class="form-control" id="nome">
+                    </div>
+                    <div class="form-group"> 
+                        <label for="email">Email</label>
+                        <input type="email"  placeholder="Insira seu email" class="form-control" id="email">
+                    </div>
+                    <label>Tipo de projeto</label>
+                    <div class="form-check">
+                        <div class="form-check">
+                            
+                            <input type="checkbox"  id="advergame" value="advergame" class="form-check-input">
+                            <label  for="advergame" class="form-check-label">Advergame</label>
+                        </div>
+                        <div class="form-check">
+                            
+                            <input type="checkbox"  id="entretenimento" value="entretenimento" class="form-check-input">
+                            <label   for="entretenimento"class="form-check-label">Jogo de entretenimento</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox"  id="sistema" value="sistema" class="form-check-input">
+                            <label  for="sistema" class="form-check-label" >Sistema web</label>
+                        </div>
+                    </div>
+                    <label>Possui empresa\ou é colaborador de uma?</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="situacao" id="sim" value="sim">
+                                <label class="form-check-label" for="sim">Sim</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="situacao" id="nao" value="nao">
+                            <label class="form-check-label" for="inlineRadio2">Não</label>
+                        </div>
+                    </div>
+                    <label></label>
+                    <div class="form-group">
+                            <label for="categoria">Categoria</label>
+                            <select class="form-control" id="categoria">
+                              <option>Projeto pessoal</option>
+                              <option>Para edital</option>
+                              <option>Freelance</option>
+                              <option>Jogo AAA</option>
+                              <option>Porte empresarial</option>
+                            </select> 
+                    </div>
+                    <div class="form-group">
+                            <label for="descricao">Descrição</label>
+                            <textarea class="form-control" id="descricao" placeholder="Descreva um pouco mais sobre a sua necessidade"></textarea>
+                    </div>
+                    <div class="formInput2 ">
+                            <input type="submit" class="btn btn-danger" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
     </div>
 
 </body>
