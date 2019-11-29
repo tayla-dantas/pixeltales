@@ -15,8 +15,7 @@
     $mensagem .= "<br>  <strong>Mensagem: </strong>"
     .$_POST['mensagem'];
 
-    $headers = get_headers($email);
-
+    $headers = "From: $nome <$email>"
     mail($para, "Contato", $mensagem, $headers); 
  
     echo "<script type='javascript'>alert('Email enviado com Sucesso!');";
