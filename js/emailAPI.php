@@ -17,14 +17,12 @@
 
     $headers = get_headers($email);
 
-    $success = mail($para, "Contato", $mensagem, $headers); 
-
-    if (!$success) {
-        echo "aaaaa";
-    }
+    mail($para, "Contato", $mensagem, $headers); 
+ 
     echo "<script type='javascript'>alert('Email enviado com Sucesso!');";
     echo "javascript:window.location='index.html';</script>";
 
 ?>
+
 
  
