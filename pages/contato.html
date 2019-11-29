@@ -13,12 +13,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link  rel="script" href="../js/contatoForm.js" />
+    <link  rel="script" href="../js/emailAPI.php" />
             
     <!-- Links internos -->
     <link rel="stylesheet" href="../css/genericStyles.css">
     <link rel="script" href="../js/carousel.js">
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/contato.css">
     
     <title>Contatos</title>
@@ -97,31 +96,32 @@
         <label>Deixe uma mensagem para nós!</label>
     </div>
     
-    <form class="formulario" label="#form_data">
+    <form class="formulario" id='profileForm' method="post" action="../js/emailAPI.php">
         <fieldset class="fieldC">
             <legend class="legend">Entre em contato conosco!</legend>
             <div class="formLabel">
                 <label>Insira seu nome:</label>
             </div>
             <div class="formInput">
-                <input type="text" name="name" size="60" placeholder="Insira seu nome">
+                <input type="text" name="nome" size="60" id="nome" placeholder="Insira seu nome">
             </div>
-            <div class="formLabel2"></div>
-            <label>Insira seu email:</label>
+            <div class="formLabel2">
+                <label>Insira seu email:</label>
+            </div>
             <div class="formInput2">
-                <input type="email" name="email" size="60" placeholder="Insira seu email">
+                <input type="email" name="email" size="60" id="email" placeholder="Insira seu email">
             </div>
             <div class="formLabel2">
                 <label>Data de nascimento:</label>
             </div>
             <div class="formInput2">
-                <input type="date" name="nascimento">
+                <input type="date" name="nascimento" id="nascimento">
             </div>
             <div class="formLabel2">
                 <label>Idade:</label>
             </div>
             <div class="formInput2">
-                <input type="number" name="idade" min="1" max="100">
+                <input type="number" name="idade" id ="idade" min="10" max="80">
             </div>
             <div class="formLabel2">
                 <label>Mande seus comentarios e opiniões!</label>
@@ -131,7 +131,7 @@
             </div>
             <p></p>
             <div class="formInput2">
-                <input type="submit" value="Enviar" >
+                <input type="submit" value="Enviar" onclick="emailAPI.php" >
             </div>
         </fieldset>
     </form>
